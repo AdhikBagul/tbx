@@ -124,6 +124,7 @@ img {
     z-index: 100000;
 }
 .home-page .top-banner-right .top-clouds {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -329,11 +330,16 @@ img {
 }
 .v_dark .benefit_box {
     background-color: #1a1c34!important;
+    text-align: center;
+    padding: 10px;
 }
 .v_dark .benefit_box .card-body .card-title{
     color: #ffffff;
 }
-
+.benefit_box img{
+    width: 76px;
+    height: auto;
+}
 .pr_box {
     background-color: #1a1c34;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
@@ -597,7 +603,16 @@ img {
 
 /* ===== END OF NAVBAR SECTION ===== */
 
+.tk-top-counter .counter_box .tk_counter {
+    padding: 0px 5px;
+}
+.tk-top-counter .counter_box {
+    width: 19%;
+}
 
+.tk-top-counter {
+    width: 50%;
+}
 
 @media(max-width: 768px){
     .header-container {
@@ -608,6 +623,9 @@ img {
     }
     .card {
         margin-top: 10px;
+    }
+    .tk-top-counter {
+        width: 100%;
     }
 }
 
