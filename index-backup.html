@@ -372,9 +372,32 @@
 							  				<div class="form-control-currency-amount">
 							  					<label for="hyper-dex-amount-from-plasma-r2" class="form-control-label label">Currency</label>
 							  					<div class="control">
+							  						<!-- <div class="info-block">
+							  							<span class="fiat-amount"></span>
+							  							<span class="balance max-disabled">
+							  								<span>Balance:</span>
+							  								<span>&nbsp;</span>0
+							  							</span>
+							  						</div> -->
 							  						<div class="input-block">
 							  							<div> <span>1 TBX</span> </div>
 							  							<div> <span>0.00 TRX</span> </div>
+							  							<!-- <input id="hyper-dex-amount-from-plasma-r2" type="text" role="amount" autocomplete="off" class="currency-amount-input" placeholder="0.0" name="fromAmount" value="" spellcheck="false" data-ms-editor="true">
+							  							<div class="form-control-currency currency-selector">
+							  								<div class="control">
+							  									<button type="button" class="btn-select-currency">
+							  										<div class="img-currency  icon" style="--img-size-default: 24px;">
+							  											<div class="img-currency-single">
+							  												<div class="currency-logo">
+							  													<img alt="Ethereum" src="assets/img/Ethereum-ETH-icon.png">
+							  												</div>
+							  											</div>
+							  										</div>
+							  										<span class="symbol">TRX</span>
+							  										<span class="drop-down"></span>
+							  									</button>
+							  								</div>
+							  							</div> -->
 							  						</div>
 							  					</div>
 							  					<div class="form-control-summary summary">
@@ -382,32 +405,33 @@
 							  						<div class="summary-text summary-error "></div>
 							  					</div>
 							  				</div>
-							  				<div class="form-control-currency-amount">
-							  					<label for="hyper-dex-amount-from-plasma-r2" class="form-control-label label">Referrer Wallet</label>
-							  					<div class="control">
-							  						<div class="input-block">
-							  							<input id="hyper-dex-amount-from-plasma-r2" type="text" role="amount" autocomplete="off" class="currency-amount-input" placeholder="0.0" name="fromAmount" value="" spellcheck="false" data-ms-editor="true">
-							  						</div>
-							  					</div>
-							  					<div class="form-control-summary summary">
-							  						<div class="summary-text summary-hint "></div>
-							  						<div class="summary-text summary-error "></div>
-							  					</div>
+							  				<div class="swap-fields-button">
+							  					<button class="btn btn-icon-rect" style="line-height: 0;"><i class="fa fa-exchange" aria-hidden="true"></i></button>
 							  				</div>
 							  				<div class="form-control-currency-amount">
-							  					<label for="hyper-dex-amount-to-plasma-r3" class="form-control-label label">Enter Your Amount</label>
+							  					<label for="hyper-dex-amount-to-plasma-r3" class="form-control-label label">Buy (estimated)</label>
 							  					<div class="control">
 							  						<div class="info-block">
 							  							<span class="fiat-amount"></span>
 							  							<span class="balance max-disabled">
-							  								<span>0.81 USD</span>
+							  								<span>Balance:</span>
+							  								<span>&nbsp;</span>0
 							  							</span>
 							  						</div><div class="input-block">
-														<input type="text" id="hyper-dex-amount-to-plasma-r3" class="currency-amount-input" placeholder="0.0" aria-label="Recipient's username" aria-describedby="basic-addon2">
-														  <span class="input-group-text" id="basic-addon2">TBX</span>
+							  							<input id="hyper-dex-amount-to-plasma-r3" type="text" role="amount" autocomplete="off" class="currency-amount-input" placeholder="0.0" name="toAmount" value="" spellcheck="false" data-ms-editor="true">
 							  							<div class="form-control-currency currency-selector">
 							  								<div class="control">
-							  									<span class="symbol">0.00 TRX</span>
+							  									<button type="button" class="btn-select-currency">
+							  										<div class="img-currency  icon" style="--img-size-default: 24px;">
+							  											<div class="img-currency-single">
+							  												<div class="currency-logo">
+							  													<img alt="USD Coin" src="assets/img/Circle_USDC_Logo.png">
+							  												</div>
+							  											</div>
+							  										</div>
+							  										<span class="symbol">USDC</span>
+							  										<span class="drop-down"></span>
+							  									</button>
 							  								</div>
 							  							</div>
 							  						</div>
@@ -453,7 +477,7 @@
 							  				<div class="button-block">
 							  					<div class="btn-approve-wrap  unknown">
 							  						<button class="btn btn-primary btn-lg" id="swap-button" disabled="">
-							  							<span>Buy</span>
+							  							<span>Swap</span>
 							  						</button>
 							  						<button id="approve-button" type="button" role="button" class="btn btn-approve btn-primary btn-lg" disabled="" style="display: none;"><span>Approve </span></button>
 							  					</div>
@@ -486,124 +510,151 @@
 							  	</div>
 							  </div>
 							  <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab" tabindex="0">
-								<div class="hyper-dex-card-content">
-									<div class="hyper-dex-card-swap-form">
-										<div class="form">
-											<div class="form-control-currency-amount">
-												<label for="hyper-dex-amount-from-plasma-r2" class="form-control-label label">Currency</label>
-												<div class="control">
-													<div class="input-block">
-														<div> <span>1 TBX</span> </div>
-														<div> <span>0.00 TRX</span> </div>
-													</div>
-												</div>
-												<div class="form-control-summary summary">
-													<div class="summary-text summary-hint "></div>
-													<div class="summary-text summary-error "></div>
-												</div>
-											</div>
-											<div class="form-control-currency-amount">
-												<label for="hyper-dex-amount-from-plasma-r2" class="form-control-label label">Referrer Wallet</label>
-												<div class="control">
-													<div class="input-block">
-														<input id="hyper-dex-amount-from-plasma-r2" type="text" role="amount" autocomplete="off" class="currency-amount-input" placeholder="0.0" name="fromAmount" value="" spellcheck="false" data-ms-editor="true">
-													</div>
-												</div>
-												<div class="form-control-summary summary">
-													<div class="summary-text summary-hint "></div>
-													<div class="summary-text summary-error "></div>
-												</div>
-											</div>
-											<div class="form-control-currency-amount">
-												<label for="hyper-dex-amount-to-plasma-r3" class="form-control-label label">Enter Your Amount</label>
-												<div class="control">
-													<div class="info-block">
-														<span class="fiat-amount"></span>
-														<span class="balance max-disabled">
-															<span>0.81 USD</span>
-														</span>
-													</div><div class="input-block">
-													  <input type="text" id="hyper-dex-amount-to-plasma-r3" class="currency-amount-input" placeholder="0.0" aria-label="Recipient's username" aria-describedby="basic-addon2">
-														<span class="input-group-text" id="basic-addon2">TBX</span>
-														<div class="form-control-currency currency-selector">
-															<div class="control">
-																<span class="symbol">0.00 TRX</span>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="form-control-summary summary">
-													<div class="summary-text summary-hint "></div>
-													<div class="summary-text summary-error "></div>
-												</div>
-											</div>
-											<div class="trade-info">
-												<div class="row">
-													<div class="label">
-														<span>Price</span>
-													</div>
-													<div class="value">-</div>
-												</div>
-												<div class="row">
-													<div class="label">
-														<span>Slippage Tolerance</span>
-													</div>
-													<div class="value">
-														<span class="formatted-percent  up ">
-															<span class="percent">0.5%</span>
-														</span>
-													</div>
-												</div>
-												<div class="row">
-													<div class="label">
-														<span>Pay TX fee in</span>
-													</div>
-													<button class="btn value">
-														<div class="img-currency " style="--img-size-default: 16px;">
-															<div class="img-currency-single">
-																<div class="currency-logo">
-																	<img alt="Ethereum" src="assets/img/Ethereum-ETH-icon.png">
-																</div>
-															</div>
-														</div>
-														<span>ETH</span>
-													</button>
-												</div>
-											</div>
-											<div class="button-block">
-												<div class="btn-approve-wrap  unknown">
-													<button class="btn btn-primary btn-lg" id="swap-button" disabled="">
-														<span>Sell</span>
-													</button>
-													<button id="approve-button" type="button" role="button" class="btn btn-approve btn-primary btn-lg" disabled="" style="display: none;"><span>Approve </span></button>
-												</div>
-											</div>
-										</div>
-										<div class="details">
-											<div class="card-dropdown" style="margin-top: -140px;">
-												<div class="card-dropdown-animated" style="--row-height: 32px; padding-top: 52px; padding-bottom: 24px;">
-													<div class="card-dropdown-content">
-														<div class="row">
-															<div class="label"><span>Network</span></div>
-															<div class="value">
-																<div class="img-network" alt="Network" style="--img-network-size-default: 16px;">
-																	<img src="/images/ethereum.svg" alt="Network logo">
-																</div>
-																<b>Ethereum</b>
-															</div>
-														</div>
-														<div class="row">
-															<div class="label"><span>Transaction Cost</span></div>
-															<div class="value">
-																<span>–</span>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+							  	<div class="hyper-dex-card-content">
+							  		<div class="hyper-dex-card-swap-form">
+							  			<div class="form">
+							  				<div class="form-control-currency-amount">
+							  					<label for="hyper-dex-amount-from-plasma-r2" class="form-control-label label">Sell</label>
+							  					<div class="control">
+							  						<div class="info-block">
+							  							<span class="fiat-amount"></span>
+							  							<span class="balance max-disabled">
+							  								<span>Balance:</span>
+							  								<span>&nbsp;</span>0</span>
+							  							</div>
+							  							<div class="input-block">
+							  								<input id="hyper-dex-amount-from-plasma-r2" type="text" role="amount" autocomplete="off" class="currency-amount-input" placeholder="0.0" name="fromAmount" value="" spellcheck="false" data-ms-editor="true">
+							  								<div class="form-control-currency currency-selector">
+							  									<div class="control">
+							  										<button type="button" class="btn-select-currency">
+							  											<div class="img-currency  icon" style="--img-size-default: 24px;">
+							  												<div class="img-currency-single">
+							  													<div class="currency-logo">
+							  														<img alt="Ethereum" src="assets/img/Ethereum-ETH-icon.png">
+							  													</div>
+							  												</div>
+							  											</div>
+							  											<span class="symbol">ETH</span>
+							  											<span class="drop-down"></span>
+							  										</button>
+							  									</div>
+							  								</div>
+							  							</div>
+							  						</div>
+							  						<div class="form-control-summary summary">
+							  							<div class="summary-text summary-hint "></div>
+							  							<div class="summary-text summary-error "></div>
+							  						</div>
+							  					</div>
+							  					<div class="swap-fields-button">
+							  						<button class="btn btn-icon-rect" style="line-height: 0;"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+							  					</div>
+							  					<div class="form-control-currency-amount">
+							  						<label for="hyper-dex-amount-to-plasma-r3" class="form-control-label label">Buy (estimated)</label>
+							  						<div class="control">
+							  							<div class="info-block">
+							  								<span class="fiat-amount"></span>
+							  								<span class="balance max-disabled">
+							  									<span>Balance:</span>
+							  									<span>&nbsp;</span>0</span>
+							  								</div>
+							  								<div class="input-block">
+							  									<input id="hyper-dex-amount-to-plasma-r3" type="text" role="amount" autocomplete="off" class="currency-amount-input" placeholder="0.0" name="toAmount" value="" spellcheck="false" data-ms-editor="true">
+							  									<div class="form-control-currency currency-selector">
+							  										<div class="control">
+							  											<button type="button" class="btn-select-currency">
+							  												<div class="img-currency  icon" style="--img-size-default: 24px;">
+							  													<div class="img-currency-single">
+							  														<div class="currency-logo">
+							  															<img alt="USD Coin" src="assets/img/Circle_USDC_Logo.png">
+							  														</div>
+							  													</div>
+							  												</div>
+							  												<span class="symbol">USDC</span>
+							  												<span class="drop-down"></span>
+							  											</button>
+							  										</div>
+							  									</div>
+							  								</div>
+							  							</div>
+							  							<div class="form-control-summary summary">
+							  								<div class="summary-text summary-hint "></div>
+							  								<div class="summary-text summary-error "></div>
+							  							</div>
+							  						</div>
+							  						<div class="trade-info">
+							  							<div class="row">
+							  								<div class="label">
+							  									<span>Price</span>
+							  								</div>
+							  								<div class="value">-</div>
+							  							</div>
+							  							<div class="row">
+							  								<div class="label">
+							  									<span>Slippage Tolerance</span>
+							  								</div>
+							  								<div class="value">
+							  									<span class="formatted-percent  up ">
+							  										<span class="percent">0.5%</span>
+							  									</span>
+							  								</div>
+							  							</div>
+							  							<div class="row">
+							  								<div class="label">
+							  									<span>Pay TX fee in</span>
+							  								</div>
+							  								<button class="btn value">
+							  									<div class="img-currency " style="--img-size-default: 16px;">
+							  										<div class="img-currency-single">
+							  											<div class="currency-logo">
+							  												<img alt="Ethereum" src="assets/img/Ethereum-ETH-icon.png">
+							  											</div>
+							  										</div>
+							  									</div>
+							  									<span>ETH</span>
+							  								</button>
+							  							</div>
+							  						</div>
+							  						<div class="button-block">
+							  							<div class="btn-approve-wrap  unknown">
+							  								<button class="btn btn-primary btn-lg" id="swap-button" disabled="">
+							  									<span>Swap</span>
+							  								</button>
+							  								<button id="approve-button" type="button" role="button" class="btn btn-approve btn-primary btn-lg" disabled="" style="display: none;">
+							  									<span>Approve </span>
+							  								</button>
+							  							</div>
+							  						</div>
+							  					</div>
+							  					<div class="details">
+							  						<div class="card-dropdown" style="margin-top: -140px;">
+							  							<div class="card-dropdown-animated" style="--row-height: 32px; padding-top: 52px; padding-bottom: 24px;">
+							  								<div class="card-dropdown-content">
+							  									<div class="row">
+							  										<div class="label">
+							  											<span>Network</span>
+							  										</div>
+							  										<div class="value">
+							  											<div class="img-network" alt="Network" style="--img-network-size-default: 16px;">
+							  												<img src="/images/ethereum.svg" alt="Network logo">
+							  											</div>
+							  											<b>Ethereum</b>
+							  										</div>
+							  									</div>
+							  									<div class="row">
+							  										<div class="label">
+							  											<span>Transaction Cost</span>
+							  										</div>
+							  										<div class="value">
+							  											<span>–</span>
+							  										</div>
+							  									</div>
+							  								</div>
+							  							</div>
+							  						</div>
+							  					</div>
+							  				</div>
+							  			</div>
 							  </div>
 							</div>
 						</div>

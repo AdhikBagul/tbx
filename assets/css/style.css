@@ -33,8 +33,20 @@ img {
 .padding-top-230{
     padding-top: 230px;
 }
-
-
+.input-block .input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #1a1c34;
+    border: none;
+    border-radius: var(--bs-border-radius);
+}
 .header-container {
 /*    height: 88px;*/
     width: 100%;
@@ -284,7 +296,8 @@ img {
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: var(--bs-nav-pills-link-active-color);
-    background-color: #29b5bc;
+/*    background-color: #29b5bc;*/
+    background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
 }
 
 .nav-pills .nav-link {
