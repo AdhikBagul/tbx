@@ -877,4 +877,21 @@ img {
         margin-top: 10px;
         text-align: center;
     }
+    .navbar-brand img{
+        width: 160px;
+    }
+    .footer-logo a img{
+        width: 160px;
+    }
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+    .navbar-brand {
+        padding: 0;
+        padding-top: 0;
+        padding-bottom: 10px;
+    }    
+    .social_media ui{
+        justify-content: center!important;
+    }
 }
